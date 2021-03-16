@@ -7,7 +7,7 @@ public class Array1 {
         Array = new int[10];
         for(int n = 0; n<10; n++) {
             Array[n] = 5 + (int) (Math.random() * 10);
-            System.out.println ((n+1) + " число цикла = " + Array[n]);
+            System.out.println ((n+1) + " number of array = " + Array[n]);
         }
     }
 }
