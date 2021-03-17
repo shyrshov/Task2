@@ -9,10 +9,8 @@ public class Array10 {
             Array[i] = i;
         }
         int s = 0;
-        for (int a = 0; a < n; a++) {
-            if (a != 0 && a != Array.length - 1) {
+        for (int a = 1; a < Array.length - 1; a++) {
                 s = s + Array[a];
-            }
         }
         System.out.println ("Sum of all array elements = " + s);
     }
