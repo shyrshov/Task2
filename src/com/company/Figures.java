@@ -10,15 +10,22 @@ public class Figures {
                 System.out.println();
             }
     }
-    public static void main2 (String[] args) {
-        int q = 5;
-        int array[];
-        array = new int[q];
-        for (int n = 0; n < q; n++) {
+    public static void main (String[] args) {
+        String a = "*";
+        String b = " ";
+        int l = 8;
+        int h = 5;
+        int[] array;
+        array = new int[h];
+        for (int m = 0; m < h; m++) {
+            array[m] = m + 1;
+        }
+
+        for (int n = 0; n < h; n++)  {
             if (n == 0 || n == array.length - 1) {
-                System.out.println("********");
+                System.out.println(a.repeat(l));
             } else {
-                System.out.println("*      *");
+                System.out.println(a + b.repeat(l-2) + a);
             }
         }
     }
@@ -33,7 +40,7 @@ public class Figures {
         }
     }
 
-    public static void main (String [] args) {
+    public static void main2 (String [] args) {
         String o = "*";
         String p = " ";
         int h = 5;
